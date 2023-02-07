@@ -1,3 +1,124 @@
-@Import "./components/base.scss";
-@Import "./compenents/header.scss";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1258px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: relative;
+  height: 768px;
+}
+
+.header__menu {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 2.1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #0F0E22;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  z-index: -1;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header__title {
+  font-size: 6.4rem;
+  line-height: 130%;
+  color: #ffffff;
+  max-width: 614px;
+}
+
+.header__img {
+  position: relative;
+  z-index: 20;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.nav__link {
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
